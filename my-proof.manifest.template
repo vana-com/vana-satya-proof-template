@@ -8,7 +8,6 @@ fs.mounts = [
   { type = "encrypted", path = "/sealed", uri = "file:/sealed", key_name = "_sgx_mrenclave" },
   { path = "/input", uri = "file:/input" },
   { path = "/output", uri = "file:/output" },
-  { path = "/etc/hosts", uri = "file:helper-files/hosts" },
 ]
 
 # Gramine gives a warning that allowed_files is not safe in production, but it
@@ -20,6 +19,7 @@ fs.mounts = [
 sgx.allowed_files = [
   "file:/input/",
   "file:/output/",
+  "file:/etc/hosts",
 ]
 
 # You can add other Gramine-manifest-compatible options as needed, see the
