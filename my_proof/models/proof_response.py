@@ -14,6 +14,7 @@ class ProofResponse(BaseModel):
     Offchain attributes - the remainder of the proof is written to IPFS
         dlp_id: The DLP ID is found in the DLP Root Network contract after the DLP is registered.
         valid: A single boolean to summarize if the file is considered valid in this DLP.
+        honesty: A single boolean to show if the points metrics were tampered with on the client side.
         authenticity: A score between 0 and 1 to rate if the file has been tampered with.
         ownership: A score between 0 and 1 to verify the ownership of the file.
         quality: A score between 0 and 1 to show the quality of the file
@@ -23,6 +24,7 @@ class ProofResponse(BaseModel):
 
     dlp_id: int
     valid: bool = False
+    honesty: bool = False
     score: float = 0.0
     authenticity: float = 0.0
     ownership: float = 0.0
