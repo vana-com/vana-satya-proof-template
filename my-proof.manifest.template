@@ -29,3 +29,5 @@ fs.mounts = [
 # You can add other Gramine-manifest-compatible options as needed, see the
 # Gramine documentation for more details: https://gramine.readthedocs.io. Note
 # that gsc defines a number of manifest settings by default.
+
+loader.entrypoint = { path = "/my_proof/__main__.py" }
