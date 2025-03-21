@@ -1,3 +1,7 @@
+> **Deprecation notice:** The Intel SGX Satya network is now deprecated, please use the the TDX Satya network instead. The template for proofs that run on this new network can be found here: https://github.com/vana-com/vana-satya-proof-template-py
+
+
+
 # Vana Satya Proof of Contribution - Python Template
 
 This repository serves as a template for creating a [proof of contribution](https://docs.vana.org/vana/core-concepts/key-elements/proof-of-contribution) tasks using Python. It is executed on Vana's Satya Network, a group of highly confidential and secure compute nodes that can validate data without revealing its contents to the node operator.
